@@ -23,7 +23,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "build": "react-scripts build",
     "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
     "cover": "SKIP_PREFLIGHT_CHECK=true react-scripts test --coverage --watchAll=false",
@@ -34,7 +34,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js",
-      "!src/**/*.stories.js"
+      "!src/**/*.stories.js",
+      "!src/reportWebVitals.js",
+      "!src/index.js"
     ]
   },
   "eslintConfig": {

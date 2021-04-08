@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { BreakpointSizes, breakAt } from "styles/Breakpoints";
+import Container from "components/atoms/Container";
 
 const Root = styled.div`
   color: #fff;
@@ -14,21 +14,8 @@ const Root = styled.div`
   `};
 `;
 
-const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
-
-  ${breakAt(BreakpointSizes.md)} {
-    padding: 0 16px;
-  }
-  ${breakAt(BreakpointSizes.lg)} {
-    max-width: 1140px;
-    padding: 0;
-    margin: 0 auto;
-  }
-`;
-
 const Content = styled.div`
+  width: max-content;
   p,
   li {
     font-size: 20px;

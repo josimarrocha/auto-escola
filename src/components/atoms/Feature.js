@@ -7,10 +7,8 @@ const Root = styled.div`
   & h5 {
     margin: 16px 0;
     min-height: 3.9rem;
-    background: red;
   }
   & p {
-    background: red;
     margin: 0;
   }
 `;
