@@ -1,12 +1,13 @@
 import { addDecorator, addParameters } from "@storybook/react";
+import { select } from "@storybook/addon-knobs";
 import GlobalStyle from "../src/styles/GlobalStyle";
-import ThemeProvider from "../src/styles/ThemeProvider";
+import ThemeProvider, { themeNames } from "../src/styles/ThemeProvider";
 
 addDecorator((styryFn) => (
-  <>
+  <ThemeProvider theme={select("theme", themeNames, themeNames.light)}>
     <GlobalStyle />
-    <ThemeProvider>{styryFn()}</ThemeProvider>
-  </>
+    {styryFn()}
+  </ThemeProvider>
 ));
 
 const viewports = {

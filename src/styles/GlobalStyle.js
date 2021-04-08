@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet";
 import { BreakpointSizes, breakAt } from "./Breakpoints";
 
-const colorYellow = "#ffc107";
-
 const GlobalStyle = createGlobalStyle`
   html{
     font-family: "Poppins", sans-serif;
@@ -29,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
 
   strong {
-     color: ${colorYellow};
+     color: ${(props) => props.theme.colors.primary.main};
    }
   }
 
