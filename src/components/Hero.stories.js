@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import BgCuba from "../stories/assets/bg-cuba.jpg";
 import bgCar from "../stories/assets/bg-car.jpg";
 import Heading from "./Heading";
+import Button from "./Button";
 
 export default {
   title: "Components/Hero",
@@ -29,5 +30,8 @@ export const withList = () => (
       <li>Lorem ipsum dolor sit, amet consectetur </li>
       <li>Lorem ipsum dolor sit, amet consectetur </li>
     </ul>
+    <Button color="primary" variant="outlined">
+      Matricule-se Agora
+    </Button>
   </Hero>
 );
