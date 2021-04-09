@@ -1,4 +1,3 @@
-// import Proptypes from "prop-types";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import Section from "components/molecules/Section";
 import Hero from "components/molecules/Hero";
@@ -7,6 +6,8 @@ import Heading from "components/atoms/Heading";
 import Grid from "components/atoms/Grid";
 import Feature from "components/atoms/Feature";
 import bgHero from "assets/hero.jpg";
+import AboutVideo from "assets/about.mp4";
+import Footer from "components/organisms/Footer";
 
 const Home = () => (
   <>
@@ -42,11 +43,39 @@ const Home = () => (
         </Feature>
       </Grid>
     </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nossos serviços</h2>
+      </Heading>
+    </Section>
+    <Section>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Rocha Auto Escola</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            sapiente corporis optio aut ratione quod magni voluptatum iure
+            cupiditate consequuntur, rem tempore pariatur dolorum omnis officiis
+            laborum reiciendis nihil repudiandae?
+          </p>
+          <div>
+            <Button color="primary">Saiba mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={AboutVideo} width="100%" autoPlay loop />
+        </div>
+      </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas recorrentes</h2>
+      </Heading>
+    </Section>
+    <Footer />
   </>
 );
-
-// Home.defaultProps = {};
-
-// Home.propTypes = {};
 
 export default Home;
