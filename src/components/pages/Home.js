@@ -4,10 +4,51 @@ import Hero from "components/molecules/Hero";
 import Button from "components/atoms/Button";
 import Heading from "components/atoms/Heading";
 import Grid from "components/atoms/Grid";
+import ProductGrid from "components/organisms/ProductGrid";
 import Feature from "components/atoms/Feature";
-import bgHero from "assets/hero.jpg";
-import AboutVideo from "assets/about.mp4";
 import Footer from "components/organisms/Footer";
+import bgHero from "assets/hero.jpg";
+import PlaceHolderImage from "stories/assets/bg-car.jpg";
+import AboutVideo from "assets/about.mp4";
+
+const products = [
+  {
+    id: 1,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    summary: "adipisicing elit",
+    image: PlaceHolderImage,
+  },
+  {
+    id: 2,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    summary: "adipisicing elit",
+    image: PlaceHolderImage,
+  },
+  {
+    id: 3,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    summary: "adipisicing elit",
+    image: PlaceHolderImage,
+  },
+  {
+    id: 4,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    summary: "adipisicing elit",
+    image: PlaceHolderImage,
+  },
+  {
+    id: 5,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    summary: "adipisicing elit",
+    image: PlaceHolderImage,
+  },
+  {
+    id: 6,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    summary: "adipisicing elit",
+    image: PlaceHolderImage,
+  },
+];
 
 const Home = () => (
   <>
@@ -47,6 +88,7 @@ const Home = () => (
       <Heading>
         <h2>Conheça nossos serviços</h2>
       </Heading>
+      <ProductGrid products={products} />
     </Section>
     <Section>
       <Grid md={2}>
