@@ -1,4 +1,4 @@
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { breakAt, BreakpointSizes } from "styles/Breakpoints";
 
@@ -32,10 +32,10 @@ GridWrapper.defaultProps = {
 };
 
 GridWrapper.propTypes = {
-  sm: Proptypes.number,
-  md: Proptypes.number,
-  lg: Proptypes.number,
-  xl: Proptypes.number,
+  sm: PropTypes.number,
+  md: PropTypes.number,
+  lg: PropTypes.number,
+  xl: PropTypes.number,
 };
 
 export default GridWrapper;

@@ -1,4 +1,4 @@
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Root = styled.div`
@@ -61,9 +61,9 @@ Feature.defaultProps = {
 };
 
 Feature.propTypes = {
-  icon: Proptypes.node,
-  title: Proptypes.string,
-  children: Proptypes.node,
+  icon: PropTypes.node,
+  title: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default Feature;
